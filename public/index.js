@@ -1,6 +1,3 @@
-
-
-
 function adicionaItem(){
     let addInfo = {};
     let databaseRef = firebase.database().ref();
@@ -31,7 +28,6 @@ function adicionaItem(){
         $('#input-umidade').val('');
         $('#input-velocidade').val('');
     }
-
 }
 
 async function listaDados() {
@@ -79,22 +75,3 @@ async function listaDados() {
 
     });
 }
-
-
-
-// async function atualizaLista(){
-//     alert('asd')
-//     const itemId = databaseRef.child('dados').push().key;
-
-//     let databaseRef = firebase.database().ref('dados/');
-//     let lista = [];
-
-//     databaseRef.on('value') 
-//         .then((snapshot) => {
-//             console.log(snapshot.val());
-//         })
-//         .catch((err) => {
-//             console.log(err)
-//         })
-
-// }   

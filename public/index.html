@@ -29,6 +29,11 @@
     }
   </style>
   
+  <script>
+    $( document ).ready(function() {
+      listaDados();
+    });
+  </script>
   <body>
 
     <div class="form-group">
@@ -41,9 +46,6 @@
         <input placeholder="Umidade do Ar (%)" type="text" class="form-control" id="input-umidade" aria-describedby="basic-addon3">
     </div>
     <button onclick="adicionaItem();" type="button" class="btn btn-primary">Enviar</button>
-    <br>
-    <br>
-    <button onclick="listaDados();" type="button" class="btn btn-primary">Pegar dados</button>
     <br>
     <br>
     <div id="ultima-aquisição">
